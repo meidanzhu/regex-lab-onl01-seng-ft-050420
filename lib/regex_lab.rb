@@ -22,7 +22,7 @@ end
 def first_word_capitalized_and_ends_with_punctuation?(text)
   if text.scan(/^[A-Z]\[[:punct:]]/).empty?
     return false
-  else
+  elsif text.scan(/^[A-Z]\[[:punct:]]/)
     return true
   end
 end
