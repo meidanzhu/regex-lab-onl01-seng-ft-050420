@@ -20,10 +20,10 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  if text.scan(/^[A-Z]\[[:punct:]]/)
-    return true
-  elsif text.scan(/^[A-Z]\[[:punct:]]/).empty
+  if text.scan(/^[A-Z]\[[:punct:]]/) == nil
     return false
+  else
+    return true
   end
 end
 
