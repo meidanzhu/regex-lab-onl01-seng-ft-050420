@@ -9,8 +9,6 @@ end
 
 def words_starting_with_un_and_ending_with_ing(text)
   array.include[un]
-
-  end
   return text.scan(/[^un][ing$]/)
 
 end
